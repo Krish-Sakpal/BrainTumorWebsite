@@ -1,3 +1,11 @@
+Flask
+gunicorn
+opencv-python-headless
+numpy
+scipy
+cryptography
+joblib
+scikit-learn
 cryptography>=41.0.0
 numpy==1.23.5
 scipy==1.10.1
