@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prediction Result</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+        localStorage.setItem("darkMode", document.body.classList.contains("dark-mode") ? "enabled" : "disabled");
+    }
+
+    // Load dark mode preference when page loads
+    window.onload = function() {
+        if (localStorage.getItem("darkMode") === "enabled") {
+            document.body.classList.add("dark-mode");
+        }
+    };
+    </script>
 </head>
 <body>
     <div class="container">
@@ -35,11 +48,6 @@
         document.getElementById("loading").classList.remove("hidden");
     };
     </script>
-    <script>
-    function toggleDarkMode() {
-        document.body.classList.toggle("dark-mode");
-    }
-   </script>
    <style>
     .dark-mode {
         background-color: #121212;

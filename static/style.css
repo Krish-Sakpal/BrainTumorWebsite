@@ -36,3 +36,15 @@ img {
     margin-top: 20px;
     border-radius: 5px;
 }
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+.dark-mode a, .dark-mode h1, .dark-mode h2, .dark-mode p {
+    color: #ffffff;
+}
+.dark-mode button {
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+}
