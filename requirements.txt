@@ -1,3 +1,7 @@
+cryptography>=41.0.0
+numpy==1.23.5
+scipy==1.10.1
+opencv-python-headless==4.7.0.68
 absl-py==2.1.0
 anyio==4.4.0
 argon2-cffi==23.1.0
